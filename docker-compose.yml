@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  database_1:
+    image: mysql:5.7
+    container_name: database_1
+    volumes:
+      - ./database/data:/var/lib/mysql
+      - ./database/initdb.d:/docker-entrypoint-initdb.d
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 6454Flock
+      MYSQL_DATABASE: my_db
+      MYSQL_USER: my_db_usr 
+      MYSQL_PASSWORD: 6454Flock@ 
+
+  website_1:
+    depends_on:
+      - database_1
+    image: wordpress:5.7-php7.4
+    container_name: website_1
+    ports:
+      - "1234:8080"
+    restart: always
+    links:
+      - database_1:mysql
+    volumes:
+      - ./src:/var/www/html
