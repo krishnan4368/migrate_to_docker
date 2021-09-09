@@ -14,7 +14,7 @@ Refer to my docker installation bash <a href="https://github.com/krishnan4368/in
 
 # Steps
 1. Create work directory <br>
-<code>mkdir /root/my_wordpress/ </code><br>The above command will create a folder name "my_wordpress" <br>
+<code>mkdir /root/my_wordpress/ </code><br>
 
 2. Download docker-compose.yml file into working directory.<br>
 ```
