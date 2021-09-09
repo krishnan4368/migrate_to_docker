@@ -3,7 +3,7 @@
 WordPress is the most popular content management system. It’s written in PHP, stores data in a MySQL database, and usually runs behind an Apache web server. These dependencies add several packages to your system and can be tricky to maintain over time. Here’s how to quickly containerize existing WordPress website.
 
 # Prerequisites
-1. Install Nginx on the server. We will use it as a proxy server. Use following command to install nginx on your Ubuntu server.<code>apt-get install nginx -y</code> <br>
+1. Install Nginx on the server. We will use it as a proxy server. Use following command to install nginx on your Ubuntu server.<br><code>apt-get install nginx -y</code> <br>
 
 2. Zip archive of your wordpress website <br>
 
